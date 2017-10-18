@@ -236,7 +236,7 @@ exports.renderHeader = function(user, content, params) {
 	] : [
 		'  <div id="searchBar">',
 		'  <h1>Listen to your world</h1>',
-		'	 <p>& Tell stories with music</p>',
+		'	 <p>Tell stories with music</p>',
 		'   <div class="searchForm" id="searchForm">', //<form id="searchForm" method="get" action="'+render.urlPrefix+'/search">',
 		'    <input name="q" class="q search-input" id="q" type="text" value="' + uiSnippets.htmlEntities(params.q) + '" placeholder="Search" autocomplete="off" />',
 		//	'    <input type="button" id="searchClear" />',
