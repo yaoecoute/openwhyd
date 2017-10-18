@@ -236,15 +236,15 @@ exports.renderHeader = function(user, content, params) {
 	] : [
 		'  <div id="searchBar">',
 		'  <h1>Listen to your world</h1>',
-		'	 <p>Collect and share the best music in the world</p>',
+		'	 <p>& Tell stories with music</p>',
 		'   <div class="searchForm" id="searchForm">', //<form id="searchForm" method="get" action="'+render.urlPrefix+'/search">',
-		'    <input name="q" class="q search-input" id="q" type="text" value="' + uiSnippets.htmlEntities(params.q) + '" placeholder="Search for a song, artist, genre, etc" autocomplete="off" />',
+		'    <input name="q" class="q search-input" id="q" type="text" value="' + uiSnippets.htmlEntities(params.q) + '" placeholder="Search" autocomplete="off" />',
 		//	'    <input type="button" id="searchClear" />',
 		'   </div>', //</form>',
 		'   <div class="searchResults" id="searchResults"></div>',
 		'  </div>',
 		'  <div id="logBox">',
-		'   <a id="get-app" href="https://itunes.apple.com/fr/app/whyd-everyones-music-playlist/id874380201" target="_blank">Get App</a>',
+		// '   <a id="get-app" href="https://itunes.apple.com/fr/app/whyd-everyones-music-playlist/id874380201" target="_blank">Get App</a>',
 		'   <a id="signin" href="/login">Login</a>',
 		'   <a id="signup" onclick="login();">Sign up</a>',
 		'  </div>'
