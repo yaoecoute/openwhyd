@@ -13,8 +13,8 @@ var config = require("../models/config.js");
 var runsLocally = config.urlPrefix.indexOf("localhost") != -1;
 
 var STATIC_FILES = {
-	"/favicon.ico": "/images/favicon"+(runsLocally ? "_orange" : "")+".ico",
-	"/favicon.png": "/images/favicon"+(runsLocally ? "_orange" : "")+".png"
+	"/favicon.ico": "/images/favicon.ico",
+	"/favicon.png": "/images/favicon.png"
 };
 
 exports.controller = function(request, reqParams, response) {
