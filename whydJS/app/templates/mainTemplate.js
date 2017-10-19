@@ -39,7 +39,7 @@ var playerHtmlCode = fs.readFileSync("app/templates/whydPlayer.html", "utf8");
 
 exports.defaultPageMeta = {
 	img: config.urlPrefix + "/images/logo-black-square-smaller.png",
-	desc: "The place for music lovers. Collect and share the tracks you love."
+	desc: "Listen to your world & tell stories with music"
 };
 
 
@@ -258,8 +258,8 @@ exports.renderHeader = function(user, content, params) {
 exports.renderWhydPage = function (params) {
 	var params = params || {};
 
-	params.title = (params.pageTitle ? params.pageTitle + ' - ' : '') + "Openwhyd"
-		+ (params.pageTitle ? "" : " – Discover and collect the best music tracks from the web");
+	params.title = (params.pageTitle ? params.pageTitle + ' - ' : '') + "Yaoe"
+		+ (params.pageTitle ? "" : " | Listen to your world & tell stories with music");
 
 	params.js = (params.noDefaultJs ? [] : [
 		"jquery.avgrund.js",

@@ -18,7 +18,7 @@ var apps = {
 		id: "heariam",
 		uId: "50be0bbf7e91c862b2a924da",
 		name: "Hear I Am",
-		desc: "Discover the best Music Lovers where you check-in",
+		desc: "best Music Lovers where you check-in",
 		img: "http://adrienjoly.com/heariam/icon.png"		
 	}
 };
