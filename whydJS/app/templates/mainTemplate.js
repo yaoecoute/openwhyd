@@ -39,7 +39,7 @@ var playerHtmlCode = fs.readFileSync("app/templates/whydPlayer.html", "utf8");
 
 exports.defaultPageMeta = {
 	img: config.urlPrefix + "/images/logo-black-square-smaller.png",
-	desc: "Listen to your world & tell stories with music"
+	desc: "The world's music social platform"
 };
 
 
@@ -235,8 +235,8 @@ exports.renderHeader = function(user, content, params) {
 		'  </div>'
 	] : [
 		'  <div id="searchBar">',
-		'  <h1>Listen to your world</h1>',
-		'	 <p>Tell stories with music</p>',
+		'  <h1>The world social music platform</h1>',
+		'	 <p>Listen to your world & share stories in music</p>',
 		'   <div class="searchForm" id="searchForm">', //<form id="searchForm" method="get" action="'+render.urlPrefix+'/search">',
 		'    <input name="q" class="q search-input" id="q" type="text" value="' + uiSnippets.htmlEntities(params.q) + '" placeholder="Search" autocomplete="off" />',
 		//	'    <input type="button" id="searchClear" />',

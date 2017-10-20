@@ -70,7 +70,12 @@
 	<div class="sub-container">
 
 			<h2 class="head-name-tab">
-				<span>Search results for: {{q}}</span>
+				<ul style="overflow:auto;">
+					<li><a id="tab_tracks" href="javascript:{};//#tracks" class="selected">{{nbPosts}} Tracks<div></div></a></li>
+					<li><a id="tab_users" href="javascript:{};//#users">{{nbUsers}} People<div></div></a></li>
+					<li><a id="tab_playlists" href="javascript:{};//#playlists">{{nbPlaylists}} Playlists<div></div></a></li>
+					<!-- <span>Search results for: {{q}}</span> -->
+				</ul>
 			</h2>
 			<div id="search-filters">
 				<span>Filter: </span>

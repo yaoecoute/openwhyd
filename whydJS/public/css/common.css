@@ -2768,6 +2768,10 @@ left: 1px;
 	background: #FFF;
 	border-radius:3px 3px 0 0 ;
 }
+.head-name-tab li  {
+	float: left;
+	padding: 1px 16px 1px;
+}
 
 
 /*body.pgWithSideBar #contentPane > #mainPanel {
