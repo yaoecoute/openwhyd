@@ -2,7 +2,7 @@
 /*<![CDATA[*/
 
 	#results {
-		padding-bottom: 30px;
+		padding-bottom: 50px;
 	}
 
 	.resultPage {
@@ -17,7 +17,7 @@
 		display: none;
 		width: 350px;
 		padding-left: 150px;
-		padding-top: 20px;
+		padding-top: 18px;
 		height: 150px;
 		background-repeat: no-repeat;
 	}
@@ -49,9 +49,9 @@
 
 	{{#results}}
 
-	<div id="tabSelector">
+	<!-- <div id="tabSelector">
 		<ul style="overflow:auto;"><!-- style= hack to prevent a side effect of damien's integration -->
-			<li>
+			<!-- <li>
 				<a id="tab_tracks" href="javascript:{};//#tracks" class="selected">{{nbPosts}} Tracks<div></div></a>
 			</li>
 			<li>
@@ -62,7 +62,7 @@
 			</li>
 		</ul>
 		<a id="algolia" href="https://algolia.com"><img src="/images/algolia.svg" alt="algolia" width="130"></a>
-	</div>
+	</div> --> 
 
 
 
@@ -70,17 +70,25 @@
 	<div class="sub-container">
 
 			<h2 class="head-name-tab">
-				<ul style="overflow:auto;">
-					<li><a id="tab_tracks" href="javascript:{};//#tracks" class="selected">{{nbPosts}} Tracks<div></div></a></li>
-					<li><a id="tab_users" href="javascript:{};//#users">{{nbUsers}} People<div></div></a></li>
-					<li><a id="tab_playlists" href="javascript:{};//#playlists">{{nbPlaylists}} Playlists<div></div></a></li>
-					<!-- <span>Search results for: {{q}}</span> -->
-				</ul>
+					<div id="tabSelector">
+							<ul style="overflow:auto;"><!-- style= hack to prevent a side effect of damien's integration -->
+								<li>
+									<a id="tab_tracks" href="javascript:{};//#tracks" class="selected">{{nbPosts}} Tracks<div></div></a>
+								</li>
+								<li>
+									<a id="tab_playlists" href="javascript:{};//#playlists">{{nbPlaylists}} Playlists<div></div></a>
+								</li>
+								<li>
+									<a id="tab_users" href="javascript:{};//#users">{{nbUsers}} People<div></div></a>
+								</li>
+								
+							</ul>
+						</div>
 			</h2>
 			<div id="search-filters">
 				<span>Filter: </span>
 				<ul>
-					<li class="whyd" ><div></div></li>
+					<!-- <li class="whyd" ><div></div></li> -->
 					<li class="soundcloud" ><div></div></li>
 					<li class="youtube" ><div></div></li>
 
@@ -127,8 +135,8 @@
 				</ul>
 				{{^users}}
 				<div class="noResult">
-					<h2>It's lonely in here!</h2>
-					<p><a href="/invite">Invite more people</a></p>
+					<h2>There is no one in here!</h2>
+					<p><a href="/invite">Invite your people</a></p>
 				</div>
 				{{/users}}
 			</div>
@@ -154,16 +162,16 @@
 				{{/playlists}}
 				{{^playlists}}
 				<div class="noResult">
-					<h2>No playlist was found for this query</h2>
-					<p>Click tabs to explore other categories</p>
+					<h2>No playlist found for those keywords</h2>
+					<p>Create your own!</p>
 				</div>
 				{{/playlists}}
 			</div>
-
+			<a id="algolia" target="_blank" href="https://algolia.com"><img src="/images/algolia.svg" alt="algolia" width="100"></a>
 		</div>
 	</div>
 	{{/results}}
-
+	
 </div>
 
 <script src="/js/searchPage.js"></script>

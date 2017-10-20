@@ -1292,7 +1292,7 @@ top: 21px;
 /* *********MENU********* */
 
 #tabSelector {
-	width: 315px;
+	/* width: 315px; */
 	margin: 0px auto 10px auto;
 	float:left;
 }
@@ -1311,16 +1311,17 @@ top: 21px;
 
 #tabSelector li{
 	background: #FFF;
-
+	float: left;
 	margin-bottom:1px;
 }
 
 #tabSelector li a {
+	float: left;
 	display: block;
 	height: 54px;
 	line-height: 54px;
-	font-size: 16px;
-	padding: 0px 20px;
+	font-size: 13px;
+	padding: 0px 1px;
 	font-family: 'AvenirNext-DemiBold', Helvetica, Arial, Sans-serif; font-weight:bold;
 	border: none;
 	color:#333D45;
@@ -1333,7 +1334,7 @@ top: 21px;
 }
 
 #tabSelector a.selected {
-	border-left: 2px solid #3177AF;
+	border-bottom: 2px solid #3177AF;
 	color: #7CB1DA;
 }
 
@@ -1383,9 +1384,11 @@ top: 21px;
 }
 
 #algolia {
+	float: left;
 	text-align: center;
 	background: transparent;
-	margin-top: 60px;
+	margin-top: 6px;
+	padding-left: 18px;
 	display: block;
 }
 
@@ -1419,7 +1422,7 @@ top: 21px;
 #playlists {
 	list-style: none;
 	overflow: auto;
-	/*margin-top:15px;*/
+	margin-top:15px;
 	padding-top: 15px;
 }
 
@@ -2762,7 +2765,7 @@ left: 1px;
 	display: block;
 	font-size: 16px;
 	color: #181B1F;
-	padding-left:14px;
+	padding-left:1px;
 	height: 54px;
 	line-height: 54px;
 	background: #FFF;
@@ -3173,7 +3176,7 @@ body.pgWithSideBar #contentPane > #mainPanel > .posts {
 	color: #CBCED2;
 	margin:0 15px;
 	max-width: 100%;
-	padding: 12px 0;
+	padding: 18px 0;
 	border: 0;
 	border-top: 1px solid transparent;
 }

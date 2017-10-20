@@ -235,13 +235,13 @@ exports.renderHeader = function(user, content, params) {
 		'  </div>'
 	] : [
 		'  <div id="searchBar">',
-		'  <h1>The world social music platform</h1>',
+		'  <h1>World music social platform</h1>',
 		'	 <p>Listen to your world & share stories in music</p>',
 		'   <div class="searchForm" id="searchForm">', //<form id="searchForm" method="get" action="'+render.urlPrefix+'/search">',
 		'    <input name="q" class="q search-input" id="q" type="text" value="' + uiSnippets.htmlEntities(params.q) + '" placeholder="Search" autocomplete="off" />',
 		//	'    <input type="button" id="searchClear" />',
 		'   </div>', //</form>',
-		'   <div class="searchResults" id="searchResults"></div>',
+		// '   <div class="searchResults" id="searchResults"></div>',
 		'  </div>',
 		'  <div id="logBox">',
 		// '   <a id="get-app" href="https://itunes.apple.com/fr/app/whyd-everyones-music-playlist/id874380201" target="_blank">Get App</a>',
