@@ -884,7 +884,7 @@ body.home #searchResults {
 
 /********************* LANDING ****************************/
 body.home #header{
-	/* background:#e5e5e5 url(/images/HomepageBackgroundPicture.jpg) no-repeat ; */
+	background:#e5e5e5 url(/images/worldmap.jpg) no-repeat ;
 	background-size:cover;
 	height:650px;
 	position:relative;
